@@ -10,23 +10,4 @@
 
 @implementation BaseViewModel
 
-- (void)cancelTask{
-    [self.dataTask cancel];
-}
-
-- (void)suspendTask{
-    [self.dataTask suspend];
-}
-
-- (void)resumeTask{
-    [self.dataTask resume];
-}
-
-- (NSMutableArray *)dataArr{
-    if (!_dataArr) {
-        _dataArr = [NSMutableArray new];
-    }
-    return _dataArr;
-}
-
 @end

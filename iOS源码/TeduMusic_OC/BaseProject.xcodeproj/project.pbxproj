@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C2407661C1DCE0A00F5BD71 /* NSObject+ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2407651C1DCE0A00F5BD71 /* NSObject+ViewModel.m */; };
 		0C3B38F11C1DC6500037867E /* UIScrollView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C3B38F01C1DC6500037867E /* UIScrollView+Refresh.m */; };
 		0C752D871C1D5E9C0010EEDF /* AppDelegate+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C752D7F1C1D5E9C0010EEDF /* AppDelegate+Category.m */; };
 		0C752D891C1D5E9C0010EEDF /* NSObject+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C752D821C1D5E9C0010EEDF /* NSObject+Common.m */; };
@@ -291,6 +292,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C2407641C1DCE0A00F5BD71 /* NSObject+ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ViewModel.h"; sourceTree = "<group>"; };
+		0C2407651C1DCE0A00F5BD71 /* NSObject+ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ViewModel.m"; sourceTree = "<group>"; };
 		0C3B38EF1C1DC6500037867E /* UIScrollView+Refresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Refresh.h"; sourceTree = "<group>"; };
 		0C3B38F01C1DC6500037867E /* UIScrollView+Refresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Refresh.m"; sourceTree = "<group>"; };
 		0C752D7E1C1D5E9C0010EEDF /* AppDelegate+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Category.h"; sourceTree = "<group>"; };
@@ -886,6 +889,8 @@
 				0C7530711C1DC1FE0010EEDF /* NSObject+Parse.m */,
 				0C3B38EF1C1DC6500037867E /* UIScrollView+Refresh.h */,
 				0C3B38F01C1DC6500037867E /* UIScrollView+Refresh.m */,
+				0C2407641C1DCE0A00F5BD71 /* NSObject+ViewModel.h */,
+				0C2407651C1DCE0A00F5BD71 /* NSObject+ViewModel.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -2429,6 +2434,7 @@
 				0C75329C1C1DC2AB0010EEDF /* NSObject+Runtime.m in Sources */,
 				0C7533261C1DC2AB0010EEDF /* UIView+Visuals.m in Sources */,
 				0C7533341C1DC2AB0010EEDF /* UIWebView+Canvas.m in Sources */,
+				0C2407661C1DCE0A00F5BD71 /* NSObject+ViewModel.m in Sources */,
 				0C7533121C1DC2AB0010EEDF /* UITextField+Select.m in Sources */,
 				0C7532861C1DC2AB0010EEDF /* NSDictionary+URL.m in Sources */,
 				0C7532651C1DC2AB0010EEDF /* NSFetchRequest+Extensions.m in Sources */,
