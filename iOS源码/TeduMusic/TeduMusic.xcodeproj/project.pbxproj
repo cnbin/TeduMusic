@@ -15,6 +15,10 @@
 		388B19B11C1D213700CF7FB0 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388B19B01C1D213700CF7FB0 /* Constant.swift */; };
 		388B19B31C1D217200CF7FB0 /* Import.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388B19B21C1D217200CF7FB0 /* Import.swift */; };
 		388B19B51C1D219E00CF7FB0 /* BaseNetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388B19B41C1D219E00CF7FB0 /* BaseNetManager.swift */; };
+		388B19BB1C1D244200CF7FB0 /* MusicHouseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388B19BA1C1D244200CF7FB0 /* MusicHouseVC.swift */; };
+		388B19BD1C1D245D00CF7FB0 /* DiscoveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388B19BC1C1D245D00CF7FB0 /* DiscoveryVC.swift */; };
+		388B19BF1C1D247200CF7FB0 /* MineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388B19BE1C1D247200CF7FB0 /* MineVC.swift */; };
+		388B19C11C1D24A900CF7FB0 /* CustomTBVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388B19C01C1D24A900CF7FB0 /* CustomTBVC.swift */; };
 		80A4D268B761467F6CEBF57E /* Pods_TeduMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F7B447418088EA0D0D8D256 /* Pods_TeduMusic.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +33,10 @@
 		388B19B01C1D213700CF7FB0 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = Define/Constant.swift; sourceTree = SOURCE_ROOT; };
 		388B19B21C1D217200CF7FB0 /* Import.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Import.swift; path = Define/Import.swift; sourceTree = SOURCE_ROOT; };
 		388B19B41C1D219E00CF7FB0 /* BaseNetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseNetManager.swift; path = NetManager/BaseNetManager.swift; sourceTree = SOURCE_ROOT; };
+		388B19BA1C1D244200CF7FB0 /* MusicHouseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicHouseVC.swift; sourceTree = "<group>"; };
+		388B19BC1C1D245D00CF7FB0 /* DiscoveryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoveryVC.swift; sourceTree = "<group>"; };
+		388B19BE1C1D247200CF7FB0 /* MineVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineVC.swift; sourceTree = "<group>"; };
+		388B19C01C1D24A900CF7FB0 /* CustomTBVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTBVC.swift; sourceTree = "<group>"; };
 		5F7B447418088EA0D0D8D256 /* Pods_TeduMusic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeduMusic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CC358AC6E9192912CFBA74B /* Pods-TeduMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeduMusic.release.xcconfig"; path = "Pods/Target Support Files/Pods-TeduMusic/Pods-TeduMusic.release.xcconfig"; sourceTree = "<group>"; };
 		D0CD77383AF79770BF7A5157 /* Pods-TeduMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeduMusic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TeduMusic/Pods-TeduMusic.debug.xcconfig"; sourceTree = "<group>"; };
@@ -67,6 +75,7 @@
 		0C752D621C1D126F0010EEDF /* TeduMusic */ = {
 			isa = PBXGroup;
 			children = (
+				388B19B61C1D23FC00CF7FB0 /* ViewController */,
 				0C752D631C1D126F0010EEDF /* AppDelegate.swift */,
 				0C752D751C1D13350010EEDF /* Category */,
 				0C752D761C1D13350010EEDF /* Define */,
@@ -75,7 +84,6 @@
 				0C752D791C1D13350010EEDF /* NetManager */,
 				0C752D7A1C1D13350010EEDF /* Resource */,
 				0C752D7B1C1D13350010EEDF /* View */,
-				0C752D7C1C1D13350010EEDF /* ViewController */,
 			);
 			path = TeduMusic;
 			sourceTree = "<group>";
@@ -137,11 +145,39 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		0C752D7C1C1D13350010EEDF /* ViewController */ = {
+		388B19B61C1D23FC00CF7FB0 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				388B19B71C1D23FC00CF7FB0 /* 乐馆 */,
+				388B19B81C1D23FC00CF7FB0 /* 发现 */,
+				388B19B91C1D23FC00CF7FB0 /* 我的 */,
+				388B19C01C1D24A900CF7FB0 /* CustomTBVC.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		388B19B71C1D23FC00CF7FB0 /* 乐馆 */ = {
+			isa = PBXGroup;
+			children = (
+				388B19BA1C1D244200CF7FB0 /* MusicHouseVC.swift */,
+			);
+			path = "乐馆";
+			sourceTree = "<group>";
+		};
+		388B19B81C1D23FC00CF7FB0 /* 发现 */ = {
+			isa = PBXGroup;
+			children = (
+				388B19BC1C1D245D00CF7FB0 /* DiscoveryVC.swift */,
+			);
+			path = "发现";
+			sourceTree = "<group>";
+		};
+		388B19B91C1D23FC00CF7FB0 /* 我的 */ = {
+			isa = PBXGroup;
+			children = (
+				388B19BE1C1D247200CF7FB0 /* MineVC.swift */,
+			);
+			path = "我的";
 			sourceTree = "<group>";
 		};
 		4B8C4479F17E485ED83F50F0 /* Pods */ = {
@@ -283,9 +319,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				388B19C11C1D24A900CF7FB0 /* CustomTBVC.swift in Sources */,
 				388B19AF1C1D210500CF7FB0 /* Factory.swift in Sources */,
+				388B19BF1C1D247200CF7FB0 /* MineVC.swift in Sources */,
 				388B19B51C1D219E00CF7FB0 /* BaseNetManager.swift in Sources */,
 				0C752D641C1D126F0010EEDF /* AppDelegate.swift in Sources */,
+				388B19BB1C1D244200CF7FB0 /* MusicHouseVC.swift in Sources */,
+				388B19BD1C1D245D00CF7FB0 /* DiscoveryVC.swift in Sources */,
 				388B19B31C1D217200CF7FB0 /* Import.swift in Sources */,
 				388B19B11C1D213700CF7FB0 /* Constant.swift in Sources */,
 			);

@@ -1,5 +1,5 @@
 //
-//  Import.swift
+//  MineVC.swift
 //  TeduMusic
 //
 //  Created by jiyingxin on 15/12/13.
@@ -7,5 +7,3 @@
 //
 
 import Foundation
-import SnapKit
-import Alamofire
