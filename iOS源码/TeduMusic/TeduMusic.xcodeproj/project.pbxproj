@@ -11,6 +11,10 @@
 		0C752D691C1D126F0010EEDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C752D671C1D126F0010EEDF /* Main.storyboard */; };
 		0C752D6B1C1D126F0010EEDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C752D6A1C1D126F0010EEDF /* Assets.xcassets */; };
 		0C752D6E1C1D126F0010EEDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C752D6C1C1D126F0010EEDF /* LaunchScreen.storyboard */; };
+		388B19AF1C1D210500CF7FB0 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388B19AE1C1D210500CF7FB0 /* Factory.swift */; };
+		388B19B11C1D213700CF7FB0 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388B19B01C1D213700CF7FB0 /* Constant.swift */; };
+		388B19B31C1D217200CF7FB0 /* Import.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388B19B21C1D217200CF7FB0 /* Import.swift */; };
+		388B19B51C1D219E00CF7FB0 /* BaseNetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388B19B41C1D219E00CF7FB0 /* BaseNetManager.swift */; };
 		80A4D268B761467F6CEBF57E /* Pods_TeduMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F7B447418088EA0D0D8D256 /* Pods_TeduMusic.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,6 +25,10 @@
 		0C752D6A1C1D126F0010EEDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		0C752D6D1C1D126F0010EEDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C752D6F1C1D126F0010EEDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		388B19AE1C1D210500CF7FB0 /* Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Factory.swift; path = Factory/Factory.swift; sourceTree = SOURCE_ROOT; };
+		388B19B01C1D213700CF7FB0 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = Define/Constant.swift; sourceTree = SOURCE_ROOT; };
+		388B19B21C1D217200CF7FB0 /* Import.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Import.swift; path = Define/Import.swift; sourceTree = SOURCE_ROOT; };
+		388B19B41C1D219E00CF7FB0 /* BaseNetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseNetManager.swift; path = NetManager/BaseNetManager.swift; sourceTree = SOURCE_ROOT; };
 		5F7B447418088EA0D0D8D256 /* Pods_TeduMusic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeduMusic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CC358AC6E9192912CFBA74B /* Pods-TeduMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeduMusic.release.xcconfig"; path = "Pods/Target Support Files/Pods-TeduMusic/Pods-TeduMusic.release.xcconfig"; sourceTree = "<group>"; };
 		D0CD77383AF79770BF7A5157 /* Pods-TeduMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeduMusic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TeduMusic/Pods-TeduMusic.debug.xcconfig"; sourceTree = "<group>"; };
@@ -82,6 +90,8 @@
 		0C752D761C1D13350010EEDF /* Define */ = {
 			isa = PBXGroup;
 			children = (
+				388B19B01C1D213700CF7FB0 /* Constant.swift */,
+				388B19B21C1D217200CF7FB0 /* Import.swift */,
 			);
 			path = Define;
 			sourceTree = "<group>";
@@ -89,6 +99,7 @@
 		0C752D771C1D13350010EEDF /* Factory */ = {
 			isa = PBXGroup;
 			children = (
+				388B19AE1C1D210500CF7FB0 /* Factory.swift */,
 			);
 			path = Factory;
 			sourceTree = "<group>";
@@ -103,6 +114,7 @@
 		0C752D791C1D13350010EEDF /* NetManager */ = {
 			isa = PBXGroup;
 			children = (
+				388B19B41C1D219E00CF7FB0 /* BaseNetManager.swift */,
 			);
 			path = NetManager;
 			sourceTree = "<group>";
@@ -271,7 +283,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				388B19AF1C1D210500CF7FB0 /* Factory.swift in Sources */,
+				388B19B51C1D219E00CF7FB0 /* BaseNetManager.swift in Sources */,
 				0C752D641C1D126F0010EEDF /* AppDelegate.swift in Sources */,
+				388B19B31C1D217200CF7FB0 /* Import.swift in Sources */,
+				388B19B11C1D213700CF7FB0 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
