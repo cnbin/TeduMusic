@@ -1,5 +1,5 @@
 //
-//  MineViewController.swift
+//  TabBarViewController.swift
 //  TeduMusic
 //
 //  Created by jiyingxin on 15/12/13.
@@ -8,12 +8,21 @@
 
 import UIKit
 
-class MineViewController: UIViewController {
+class TabBarViewController: UITabBarController {
+    
+    lazy var headerBar: UIView = {
+        let barView = UIView()
+        self.view.addSubview(barView)
+        barView.snp_makeConstraints(closure: { (make) -> Void in
+        })
+        return barView
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        self.tabBar.hidden = true;
+        self.view.addSubview(headerBar)
     }
 
     override func didReceiveMemoryWarning() {

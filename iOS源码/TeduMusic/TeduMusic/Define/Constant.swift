@@ -8,6 +8,6 @@
 
 import UIKit
 
-class Constant: NSObject {
+let aaa = "dddd"
 
-}
+

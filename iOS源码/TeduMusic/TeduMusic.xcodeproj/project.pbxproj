@@ -11,7 +11,6 @@
 		388B19D41C1D262200CF7FB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 388B19D21C1D262200CF7FB0 /* Main.storyboard */; };
 		388B19D61C1D262200CF7FB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 388B19D51C1D262200CF7FB0 /* Assets.xcassets */; };
 		388B19D91C1D262200CF7FB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 388B19D71C1D262200CF7FB0 /* LaunchScreen.storyboard */; };
-		388B19F11C1D31C300CF7FB0 /* CustomTBVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388B19F01C1D31C300CF7FB0 /* CustomTBVC.swift */; };
 		388B19F31C1D328A00CF7FB0 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388B19F21C1D328A00CF7FB0 /* Constant.swift */; };
 		388B19F51C1D32A900CF7FB0 /* PrefixHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388B19F41C1D32A900CF7FB0 /* PrefixHeader.swift */; };
 		388B19F71C1D32E900CF7FB0 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388B19F61C1D32E900CF7FB0 /* Factory.swift */; };
@@ -19,6 +18,7 @@
 		388B19FB1C1D330800CF7FB0 /* MusicHouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388B19FA1C1D330800CF7FB0 /* MusicHouseViewController.swift */; };
 		388B19FD1C1D331200CF7FB0 /* DiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388B19FC1C1D331200CF7FB0 /* DiscoveryViewController.swift */; };
 		388B19FF1C1D331D00CF7FB0 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388B19FE1C1D331D00CF7FB0 /* MineViewController.swift */; };
+		388B1A011C1D33C900CF7FB0 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388B1A001C1D33C900CF7FB0 /* TabBarViewController.swift */; };
 		EAD2627A506DE8F1CE965A81 /* Pods_TeduMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24037B3864DAAD034987084D /* Pods_TeduMusic.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +30,6 @@
 		388B19D51C1D262200CF7FB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		388B19D81C1D262200CF7FB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		388B19DA1C1D262200CF7FB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
-		388B19F01C1D31C300CF7FB0 /* CustomTBVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTBVC.swift; sourceTree = "<group>"; };
 		388B19F21C1D328A00CF7FB0 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		388B19F41C1D32A900CF7FB0 /* PrefixHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrefixHeader.swift; sourceTree = "<group>"; };
 		388B19F61C1D32E900CF7FB0 /* Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
@@ -38,6 +37,7 @@
 		388B19FA1C1D330800CF7FB0 /* MusicHouseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicHouseViewController.swift; sourceTree = "<group>"; };
 		388B19FC1C1D331200CF7FB0 /* DiscoveryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoveryViewController.swift; sourceTree = "<group>"; };
 		388B19FE1C1D331D00CF7FB0 /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		388B1A001C1D33C900CF7FB0 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		C0EE054580ED0A3694BF9FA9 /* Pods-TeduMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeduMusic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TeduMusic/Pods-TeduMusic.debug.xcconfig"; sourceTree = "<group>"; };
 		FC7B6A08D3783F3ADE2A6F07 /* Pods-TeduMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeduMusic.release.xcconfig"; path = "Pods/Target Support Files/Pods-TeduMusic/Pods-TeduMusic.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,10 +113,10 @@
 		388B19E71C1D26D000CF7FB0 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				388B19F01C1D31C300CF7FB0 /* CustomTBVC.swift */,
 				388B19E81C1D26D000CF7FB0 /* 乐馆 */,
 				388B19E91C1D26D000CF7FB0 /* 发现 */,
 				388B19EA1C1D26D000CF7FB0 /* 我的 */,
+				388B1A001C1D33C900CF7FB0 /* TabBarViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -299,8 +299,8 @@
 				388B19FB1C1D330800CF7FB0 /* MusicHouseViewController.swift in Sources */,
 				388B19FF1C1D331D00CF7FB0 /* MineViewController.swift in Sources */,
 				388B19CF1C1D262200CF7FB0 /* AppDelegate.swift in Sources */,
+				388B1A011C1D33C900CF7FB0 /* TabBarViewController.swift in Sources */,
 				388B19F71C1D32E900CF7FB0 /* Factory.swift in Sources */,
-				388B19F11C1D31C300CF7FB0 /* CustomTBVC.swift in Sources */,
 				388B19F91C1D32F600CF7FB0 /* BaseNetManager.swift in Sources */,
 				388B19F31C1D328A00CF7FB0 /* Constant.swift in Sources */,
 				388B19FD1C1D331200CF7FB0 /* DiscoveryViewController.swift in Sources */,
