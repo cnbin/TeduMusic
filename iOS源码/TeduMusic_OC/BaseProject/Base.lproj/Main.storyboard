@@ -55,7 +55,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FFD-FL-t0G">
                                 <rect key="frame" x="0.0" y="20" width="320" height="548"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -82,9 +82,22 @@
                     <view key="view" contentMode="scaleToFill" id="2ul-8U-NcM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yrb-2c-qfh">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98431372549999996" green="0.2666666667" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="yrb-2c-qfh" secondAttribute="trailing" id="4w6-nD-M47"/>
+                            <constraint firstItem="yrb-2c-qfh" firstAttribute="top" secondItem="UcC-Qx-eEa" secondAttribute="bottom" constant="44" id="G6u-Ob-QTf"/>
+                            <constraint firstItem="yrb-2c-qfh" firstAttribute="leading" secondItem="2ul-8U-NcM" secondAttribute="leading" id="Go7-Sc-v2G"/>
+                            <constraint firstItem="r3Q-oB-Wok" firstAttribute="top" secondItem="yrb-2c-qfh" secondAttribute="bottom" id="jAS-4P-g6c"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="oCu-Wy-jec"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zaD-8p-RZb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -120,9 +133,22 @@
                     <view key="view" contentMode="scaleToFill" id="2DQ-9p-QWI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a1x-Y4-e1u">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94509803920000002" green="0.3803921569" blue="0.031372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="a1x-Y4-e1u" firstAttribute="top" secondItem="Oqu-bI-Vr2" secondAttribute="bottom" constant="44" id="266-0C-LFM"/>
+                            <constraint firstAttribute="trailing" secondItem="a1x-Y4-e1u" secondAttribute="trailing" id="AkO-EP-rQD"/>
+                            <constraint firstItem="a1x-Y4-e1u" firstAttribute="leading" secondItem="2DQ-9p-QWI" secondAttribute="leading" id="Ghf-bW-pys"/>
+                            <constraint firstItem="Ad2-Te-1C7" firstAttribute="top" secondItem="a1x-Y4-e1u" secondAttribute="bottom" id="OXs-DB-EM4"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="Npy-k2-dJF"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6qN-DM-5mX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -139,9 +165,22 @@
                     <view key="view" contentMode="scaleToFill" id="lE2-OI-sk9">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mO0-SA-Qdx">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.33725490200000002" green="0.69019607839999997" blue="0.027450980390000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="mO0-SA-Qdx" firstAttribute="top" secondItem="ItG-GD-ALR" secondAttribute="bottom" constant="44" id="8x4-Lg-a7B"/>
+                            <constraint firstAttribute="trailing" secondItem="mO0-SA-Qdx" secondAttribute="trailing" id="CHk-Nd-DSj"/>
+                            <constraint firstItem="mO0-SA-Qdx" firstAttribute="leading" secondItem="lE2-OI-sk9" secondAttribute="leading" id="fOz-E8-rBB"/>
+                            <constraint firstItem="qgh-kM-lzL" firstAttribute="top" secondItem="mO0-SA-Qdx" secondAttribute="bottom" id="iSi-gL-nvq"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="3D4-VN-qCc"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2aa-fg-wH5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -9,7 +9,7 @@
 #import "TabBarVC.h"
 
 @interface TabBarVC ()
-
+@property(nonatomic,strong) UIView *topBarView;
 @end
 
 @implementation TabBarVC
@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.tabBar.hidden = YES;
+    self.topBarView.hidden = NO;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,4 +36,36 @@
 }
 */
 
+- (UIView *)topBarView {
+	if(_topBarView == nil) {
+		_topBarView = [[UIView alloc] init];
+        _topBarView.backgroundColor = [UIColor colorFromHexCode:kNaviBGGreen16];
+        [self.view addSubview:_topBarView];
+        [_topBarView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.right.top.mas_equalTo(0);
+            make.height.mas_equalTo(20 + 44);
+        }];
+	}
+	return _topBarView;
+}
+
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
