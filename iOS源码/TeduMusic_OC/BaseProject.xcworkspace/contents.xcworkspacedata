@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/yingxin/Documents/TeduMusic/iOS&#x6e90;&#x7801;/TeduMusic_OC/BaseProject.xcodeproj">
+      location = "group:BaseProject.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
