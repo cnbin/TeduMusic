@@ -8,6 +8,10 @@
 
 #import "MenuVC.h"
 
+#define kLoginCell      @"Cell0"
+#define kUnLoginCell    @"Cell2"
+#define kItemCell       @"Cell1"
+
 @interface MenuVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
@@ -62,9 +66,9 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSString *identify = @"Cell0";
+    NSString *identify = kLoginCell;
     if (indexPath.row) {
-        identify = @"Cell1";
+        identify = kItemCell;
     }
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identify];
     if (indexPath.row) { //非0

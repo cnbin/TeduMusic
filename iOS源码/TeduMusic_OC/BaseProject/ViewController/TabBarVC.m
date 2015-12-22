@@ -57,15 +57,15 @@
             break;
         }
         case TopBarViewBtnTypeMy: {
-            
+            self.selectedIndex = 0;
             break;
         }
         case TopBarViewBtnTypeDiscover: {
-            
+            self.selectedIndex = 1;
             break;
         }
         case TopBarViewBtnTypeMusicHouse: {
-            
+            self.selectedIndex = 2;
             break;
         }
         case TopBarViewBtnTypeSearch: {
