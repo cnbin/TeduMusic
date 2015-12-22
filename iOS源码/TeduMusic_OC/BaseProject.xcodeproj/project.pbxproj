@@ -20,6 +20,8 @@
 		0C75306F1C1D94BF0010EEDF /* NSObject+Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C75306E1C1D94BF0010EEDF /* NSObject+Network.m */; };
 		0C7530721C1DC1FE0010EEDF /* NSObject+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7530711C1DC1FE0010EEDF /* NSObject+Parse.m */; };
 		1FACF87C97D68F953ECE365C /* libPods-BaseProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EAAD623A23724C816F8DC02 /* libPods-BaseProject.a */; };
+		3856ABBA1C28F9CD00854997 /* TopBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3856ABB81C28F9CD00854997 /* TopBarView.m */; };
+		3856ABBB1C28F9CD00854997 /* TopBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3856ABB91C28F9CD00854997 /* TopBarView.xib */; };
 		3879FE811BDFA8E100A99990 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3879FE801BDFA8E100A99990 /* libsqlite3.0.tbd */; };
 		3885C8981BE8E88D009441EA /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3885C8971BE8E88D009441EA /* iCarousel.m */; };
 		3885C8FD1BE8EA26009441EA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3885C8FC1BE8EA26009441EA /* SystemConfiguration.framework */; };
@@ -68,6 +70,9 @@
 		0C75306E1C1D94BF0010EEDF /* NSObject+Network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Network.m"; sourceTree = "<group>"; };
 		0C7530701C1DC1FE0010EEDF /* NSObject+Parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Parse.h"; sourceTree = "<group>"; };
 		0C7530711C1DC1FE0010EEDF /* NSObject+Parse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Parse.m"; sourceTree = "<group>"; };
+		3856ABB71C28F9CD00854997 /* TopBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopBarView.h; sourceTree = "<group>"; };
+		3856ABB81C28F9CD00854997 /* TopBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopBarView.m; sourceTree = "<group>"; };
+		3856ABB91C28F9CD00854997 /* TopBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopBarView.xib; sourceTree = "<group>"; };
 		3879FE801BDFA8E100A99990 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		3879FE9D1BDFDD2400A99990 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		3885C8961BE8E88D009441EA /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
@@ -156,6 +161,16 @@
 				0C2407651C1DCE0A00F5BD71 /* NSObject+ViewModel.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		3856ABB61C28F9CD00854997 /* 首页头部 */ = {
+			isa = PBXGroup;
+			children = (
+				3856ABB71C28F9CD00854997 /* TopBarView.h */,
+				3856ABB81C28F9CD00854997 /* TopBarView.m */,
+				3856ABB91C28F9CD00854997 /* TopBarView.xib */,
+			);
+			path = "首页头部";
 			sourceTree = "<group>";
 		};
 		3885C8951BE8E88D009441EA /* iCarousel */ = {
@@ -272,6 +287,7 @@
 		3886C0B51BD74A4A0014E661 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3856ABB61C28F9CD00854997 /* 首页头部 */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -366,6 +382,7 @@
 				TargetAttributes = {
 					3886C0921BD748830014E661 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = KS8BTZW5V4;
 					};
 				};
 			};
@@ -393,6 +410,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3856ABBB1C28F9CD00854997 /* TopBarView.xib in Resources */,
 				3886C0A31BD748830014E661 /* Assets.xcassets in Resources */,
 				3886C0AE1BD749A00014E661 /* LaunchScreen.xib in Resources */,
 				3886C0A11BD748830014E661 /* Main.storyboard in Resources */,
@@ -465,6 +483,7 @@
 				3885C8981BE8E88D009441EA /* iCarousel.m in Sources */,
 				0C752D9F1C1D5F6D0010EEDF /* UIViewController+DismissKeyboard.m in Sources */,
 				0C2407661C1DCE0A00F5BD71 /* NSObject+ViewModel.m in Sources */,
+				3856ABBA1C28F9CD00854997 /* TopBarView.m in Sources */,
 				3886C0BB1BD74AE90014E661 /* BaseViewModel.m in Sources */,
 				0C752DA01C1D5F6D0010EEDF /* UIViewController+HUD.m in Sources */,
 				0C752D891C1D5E9C0010EEDF /* NSObject+Common.m in Sources */,
@@ -579,6 +598,7 @@
 			baseConfigurationReference = 4329DABFE5AD654FE71597C9 /* Pods-BaseProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -595,7 +615,7 @@
 					"$(PROJECT_DIR)/BaseProject/Vendor/umeng_ios_social_sdk_4.2-2.5_arm64_custom/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 					"$(PROJECT_DIR)/BaseProject/Vendor/umeng_ios_social_sdk_4.2-2.5_arm64_custom/UMSocial_Sdk_Extra_Frameworks/Wechat",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tarena.BaseProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tedu.Music;
 				PRODUCT_NAME = BaseProject;
 			};
 			name = Debug;
@@ -605,6 +625,7 @@
 			baseConfigurationReference = DD4F0750B5DAAA87BA236B31 /* Pods-BaseProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -621,7 +642,7 @@
 					"$(PROJECT_DIR)/BaseProject/Vendor/umeng_ios_social_sdk_4.2-2.5_arm64_custom/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 					"$(PROJECT_DIR)/BaseProject/Vendor/umeng_ios_social_sdk_4.2-2.5_arm64_custom/UMSocial_Sdk_Extra_Frameworks/Wechat",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tarena.BaseProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tedu.Music;
 				PRODUCT_NAME = BaseProject;
 			};
 			name = Release;

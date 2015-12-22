@@ -7,9 +7,10 @@
 //
 
 #import "TabBarVC.h"
+#import "TopBarView.h"
 
-@interface TabBarVC ()
-@property(nonatomic,strong) UIView *topBarView;
+@interface TabBarVC ()<TopBarViewDelegate>
+@property(nonatomic,strong) TopBarView *topBarView;
 @end
 
 @implementation TabBarVC
@@ -38,15 +39,41 @@
 
 - (UIView *)topBarView {
 	if(_topBarView == nil) {
-		_topBarView = [[UIView alloc] init];
-        _topBarView.backgroundColor = [UIColor colorFromHexCode:kNaviBGGreen16];
+        _topBarView = [[NSBundle mainBundle] loadNibNamed:@"TopBarView" owner:nil options:nil].firstObject;
         [self.view addSubview:_topBarView];
         [_topBarView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.right.top.mas_equalTo(0);
-            make.height.mas_equalTo(20 + 44);
+            make.height.mas_equalTo(64);
         }];
+        _topBarView.delegate = self;
 	}
 	return _topBarView;
+}
+
+#pragma mark - TopBarViewDelegate
+- (void)topBarView:(TopBarView *)topBarView clicksBtnWithType:(TopBarViewBtnType)btnType{
+    switch (btnType) {
+        case TopBarViewBtnTypeHeader: {
+            [self.sideMenuViewController presentLeftMenuViewController];
+            break;
+        }
+        case TopBarViewBtnTypeMy: {
+            
+            break;
+        }
+        case TopBarViewBtnTypeDiscover: {
+            
+            break;
+        }
+        case TopBarViewBtnTypeMusicHouse: {
+            
+            break;
+        }
+        case TopBarViewBtnTypeSearch: {
+            
+            break;
+        }
+    }
 }
 
 @end
