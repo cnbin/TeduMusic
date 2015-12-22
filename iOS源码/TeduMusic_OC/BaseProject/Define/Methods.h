@@ -9,6 +9,10 @@
 #ifndef Methods_h
 #define Methods_h
 
+/** 仅限于xib名称与类名称相同的情况 */
+#define kViewForClass(class)  [[NSBundle mainBundle] loadNibNamed:NSStringFromClass(class) owner:nil options:nil].firstObject;
+
+/** 多线程任务完成时的回调 */
 #define kCompletionHandle completionHandle:(void(^)(id model, NSError *error))completionHandle
 
 //通过RGB设置颜色

@@ -39,13 +39,12 @@
 
 - (UIView *)topBarView {
 	if(_topBarView == nil) {
-        _topBarView = [[NSBundle mainBundle] loadNibNamed:@"TopBarView" owner:nil options:nil].firstObject;
+        _topBarView = [[TopBarView alloc] initWithDelegate:self];
         [self.view addSubview:_topBarView];
         [_topBarView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.right.top.mas_equalTo(0);
             make.height.mas_equalTo(64);
         }];
-        _topBarView.delegate = self;
 	}
 	return _topBarView;
 }

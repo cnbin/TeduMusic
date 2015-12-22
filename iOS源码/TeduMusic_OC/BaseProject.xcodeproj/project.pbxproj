@@ -382,7 +382,7 @@
 				TargetAttributes = {
 					3886C0921BD748830014E661 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = KS8BTZW5V4;
+						DevelopmentTeam = Q4A4E5KTY4;
 					};
 				};
 			};
@@ -615,7 +615,7 @@
 					"$(PROJECT_DIR)/BaseProject/Vendor/umeng_ios_social_sdk_4.2-2.5_arm64_custom/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 					"$(PROJECT_DIR)/BaseProject/Vendor/umeng_ios_social_sdk_4.2-2.5_arm64_custom/UMSocial_Sdk_Extra_Frameworks/Wechat",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tedu.Music;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tedu.Music1;
 				PRODUCT_NAME = BaseProject;
 			};
 			name = Debug;
@@ -642,7 +642,7 @@
 					"$(PROJECT_DIR)/BaseProject/Vendor/umeng_ios_social_sdk_4.2-2.5_arm64_custom/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 					"$(PROJECT_DIR)/BaseProject/Vendor/umeng_ios_social_sdk_4.2-2.5_arm64_custom/UMSocial_Sdk_Extra_Frameworks/Wechat",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tedu.Music;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tedu.Music1;
 				PRODUCT_NAME = BaseProject;
 			};
 			name = Release;

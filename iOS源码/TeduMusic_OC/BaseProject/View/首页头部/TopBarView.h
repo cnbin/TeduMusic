@@ -34,5 +34,6 @@ typedef NS_ENUM(NSUInteger, TopBarViewBtnType) {
 @property(nonatomic,weak) id<TopBarViewDelegate> delegate;
 @property (weak, nonatomic) IBOutlet UIButton *myBtn;
 
-
++ (TopBarView *)defaultTopBarView;
+- (id)initWithDelegate:(id<TopBarViewDelegate>)delegate;
 @end

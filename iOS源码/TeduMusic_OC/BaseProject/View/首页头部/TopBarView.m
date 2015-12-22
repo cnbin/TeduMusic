@@ -10,6 +10,21 @@
 
 @implementation TopBarView
 
++ (TopBarView *)defaultTopBarView{
+    static TopBarView *v = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        v = kViewForClass([self class]);
+    });
+    return v;
+}
+
+- (id)initWithDelegate:(id<TopBarViewDelegate>)delegate{
+    TopBarView *tbView = kViewForClass([self class]);
+    tbView.delegate = delegate;
+    return tbView;
+}
+
 - (void)awakeFromNib{
     _currentBtn = _myBtn;
 }
@@ -42,6 +57,7 @@
     _currentBtn = sender;
     _currentBtn.enabled = NO;
 }
+
 
 
 /*
