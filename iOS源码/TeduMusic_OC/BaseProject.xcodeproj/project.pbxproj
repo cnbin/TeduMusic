@@ -20,6 +20,7 @@
 		0C75306F1C1D94BF0010EEDF /* NSObject+Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C75306E1C1D94BF0010EEDF /* NSObject+Network.m */; };
 		0C7530721C1DC1FE0010EEDF /* NSObject+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7530711C1DC1FE0010EEDF /* NSObject+Parse.m */; };
 		1FACF87C97D68F953ECE365C /* libPods-BaseProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EAAD623A23724C816F8DC02 /* libPods-BaseProject.a */; };
+		384E5C3E1C293FAE00AA3BF9 /* MyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 384E5C3D1C293FAE00AA3BF9 /* MyVC.m */; };
 		3856ABBA1C28F9CD00854997 /* TopBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3856ABB81C28F9CD00854997 /* TopBarView.m */; };
 		3856ABBB1C28F9CD00854997 /* TopBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3856ABB91C28F9CD00854997 /* TopBarView.xib */; };
 		3879FE811BDFA8E100A99990 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3879FE801BDFA8E100A99990 /* libsqlite3.0.tbd */; };
@@ -72,6 +73,8 @@
 		0C75306E1C1D94BF0010EEDF /* NSObject+Network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Network.m"; sourceTree = "<group>"; };
 		0C7530701C1DC1FE0010EEDF /* NSObject+Parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Parse.h"; sourceTree = "<group>"; };
 		0C7530711C1DC1FE0010EEDF /* NSObject+Parse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Parse.m"; sourceTree = "<group>"; };
+		384E5C3C1C293FAE00AA3BF9 /* MyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyVC.h; sourceTree = "<group>"; };
+		384E5C3D1C293FAE00AA3BF9 /* MyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyVC.m; sourceTree = "<group>"; };
 		3856ABB71C28F9CD00854997 /* TopBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopBarView.h; sourceTree = "<group>"; };
 		3856ABB81C28F9CD00854997 /* TopBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopBarView.m; sourceTree = "<group>"; };
 		3856ABB91C28F9CD00854997 /* TopBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopBarView.xib; sourceTree = "<group>"; };
@@ -302,6 +305,7 @@
 		3886C0B61BD74A4A0014E661 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				38E6DF921C293DCC0059277D /* 我的 */,
 				38E6DF8A1C2908690059277D /* 乐馆 */,
 				38E45F4F1C27FAF3002C49AC /* 菜单栏 */,
 				38E45F531C28074A002C49AC /* BaseVC.h */,
@@ -346,6 +350,15 @@
 				38E6DF901C2931AF0059277D /* MusicHouseCell.m */,
 			);
 			path = "乐馆";
+			sourceTree = "<group>";
+		};
+		38E6DF921C293DCC0059277D /* 我的 */ = {
+			isa = PBXGroup;
+			children = (
+				384E5C3C1C293FAE00AA3BF9 /* MyVC.h */,
+				384E5C3D1C293FAE00AA3BF9 /* MyVC.m */,
+			);
+			path = "我的";
 			sourceTree = "<group>";
 		};
 		DEB62B47C560AA65E07ECFA4 /* Pods */ = {
@@ -503,6 +516,7 @@
 				38E6DF8D1C29088A0059277D /* MusicHouseVC.m in Sources */,
 				0C752D9B1C1D5F6D0010EEDF /* NSDateFormatter+Category.m in Sources */,
 				38E45F551C28074A002C49AC /* BaseVC.m in Sources */,
+				384E5C3E1C293FAE00AA3BF9 /* MyVC.m in Sources */,
 				38E45F581C28076D002C49AC /* MenuVC.m in Sources */,
 				0C75306F1C1D94BF0010EEDF /* NSObject+Network.m in Sources */,
 				0C3B38F11C1DC6500037867E /* UIScrollView+Refresh.m in Sources */,
