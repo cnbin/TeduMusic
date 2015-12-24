@@ -11,19 +11,19 @@
 @implementation MusicHouseCell
 
 - (IBAction)clickRank:(id)sender {
-    [_delegate musicHouseCell:self selectedItem:MusicItemTypeRank];
+    [_delegate musicHouseCell:self selectedItem:MusicItemTypeRank];//2
 }
 
 - (IBAction)clickMedia:(id)sender {
-    [_delegate musicHouseCell:self selectedItem:MusicItemTypeMedia];
+    [_delegate musicHouseCell:self selectedItem:MusicItemTypeMedia];//3
 }
 
 - (IBAction)clickCommunity:(id)sender {
-    [_delegate musicHouseCell:self selectedItem:MusicItemTypeCommunity];
+    [_delegate musicHouseCell:self selectedItem:MusicItemTypeCommunity];//4
 }
 
 - (IBAction)clickChoose:(id)sender {
-    [_delegate musicHouseCell:self selectedItem:MusicItemTypeChoose];
+    [_delegate musicHouseCell:self selectedItem:MusicItemTypeChoose];//1
 }
 
 - (void)awakeFromNib {
@@ -32,7 +32,7 @@
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-
+    
     // Configure the view for the selected state
 }
 

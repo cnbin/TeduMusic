@@ -7,12 +7,13 @@
 //
 
 #import "MyVC.h"
+#import "MusicHouseCell.h"
 
 #define kLocalMusicCell         @"Cell0"
 #define kSubscribeCell          @"Cell2"
 #define kFounctionCell          @"Cell1"
 
-@interface MyVC ()<UITableViewDelegate, UITableViewDataSource>
+@interface MyVC ()<UITableViewDelegate, UITableViewDataSource, MusicHouseCellDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
@@ -73,6 +74,11 @@
     }
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:str];
+    
+    if (indexPath.section == 0 && indexPath.row == 1) {
+        ((MusicHouseCell *)cell).delegate = self;
+    }
+    
     return cell;
 }
 
@@ -81,6 +87,32 @@
 }
 
 kRemoveCellSeparator
+
+#pragma mark - MusicHouseCellDelegate
+- (void)musicHouseCell:(UITableViewCell *)musicHouseCell selectedItem:(MusicItemType)itemType{
+    switch (itemType) {
+        case MusicItemTypeChoose: {
+            //1
+            DDLogVerbose(@"我喜欢");
+            break;
+        }
+        case MusicItemTypeRank: {
+            //2
+            DDLogVerbose(@"下载管理");
+            break;
+        }
+        case MusicItemTypeMedia: {
+            //3
+            DDLogVerbose(@"歌单");
+            break;
+        }
+        case MusicItemTypeCommunity: {
+            //4
+            DDLogVerbose(@"播放记录");
+            break;
+        }
+    }
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -94,13 +126,13 @@ kRemoveCellSeparator
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

@@ -19,6 +19,8 @@
 		0C75306C1C1D6BD20010EEDF /* Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C75306B1C1D6BD20010EEDF /* Factory.m */; };
 		0C75306F1C1D94BF0010EEDF /* NSObject+Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C75306E1C1D94BF0010EEDF /* NSObject+Network.m */; };
 		0C7530721C1DC1FE0010EEDF /* NSObject+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7530711C1DC1FE0010EEDF /* NSObject+Parse.m */; };
+		0CA68ABA1C2A2D1500734443 /* MusicControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA68AB91C2A2D1500734443 /* MusicControlView.m */; };
+		0CA68ABC1C2A305800734443 /* MusicControlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CA68ABB1C2A305800734443 /* MusicControlView.xib */; };
 		1FACF87C97D68F953ECE365C /* libPods-BaseProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EAAD623A23724C816F8DC02 /* libPods-BaseProject.a */; };
 		384E5C3E1C293FAE00AA3BF9 /* MyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 384E5C3D1C293FAE00AA3BF9 /* MyVC.m */; };
 		3856ABBA1C28F9CD00854997 /* TopBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3856ABB81C28F9CD00854997 /* TopBarView.m */; };
@@ -73,6 +75,9 @@
 		0C75306E1C1D94BF0010EEDF /* NSObject+Network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Network.m"; sourceTree = "<group>"; };
 		0C7530701C1DC1FE0010EEDF /* NSObject+Parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Parse.h"; sourceTree = "<group>"; };
 		0C7530711C1DC1FE0010EEDF /* NSObject+Parse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Parse.m"; sourceTree = "<group>"; };
+		0CA68AB81C2A2D1500734443 /* MusicControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicControlView.h; sourceTree = "<group>"; };
+		0CA68AB91C2A2D1500734443 /* MusicControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicControlView.m; sourceTree = "<group>"; };
+		0CA68ABB1C2A305800734443 /* MusicControlView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicControlView.xib; sourceTree = "<group>"; };
 		384E5C3C1C293FAE00AA3BF9 /* MyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyVC.h; sourceTree = "<group>"; };
 		384E5C3D1C293FAE00AA3BF9 /* MyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyVC.m; sourceTree = "<group>"; };
 		3856ABB71C28F9CD00854997 /* TopBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopBarView.h; sourceTree = "<group>"; };
@@ -170,6 +175,16 @@
 				0C2407651C1DCE0A00F5BD71 /* NSObject+ViewModel.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		0CA68AB71C2A287200734443 /* 播放视图 */ = {
+			isa = PBXGroup;
+			children = (
+				0CA68AB81C2A2D1500734443 /* MusicControlView.h */,
+				0CA68AB91C2A2D1500734443 /* MusicControlView.m */,
+				0CA68ABB1C2A305800734443 /* MusicControlView.xib */,
+			);
+			path = "播放视图";
 			sourceTree = "<group>";
 		};
 		3856ABB61C28F9CD00854997 /* 首页头部 */ = {
@@ -296,6 +311,7 @@
 		3886C0B51BD74A4A0014E661 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0CA68AB71C2A287200734443 /* 播放视图 */,
 				38E6DF8E1C29319B0059277D /* 乐馆 */,
 				3856ABB61C28F9CD00854997 /* 首页头部 */,
 			);
@@ -452,6 +468,7 @@
 				3856ABBB1C28F9CD00854997 /* TopBarView.xib in Resources */,
 				3886C0A31BD748830014E661 /* Assets.xcassets in Resources */,
 				3886C0AE1BD749A00014E661 /* LaunchScreen.xib in Resources */,
+				0CA68ABC1C2A305800734443 /* MusicControlView.xib in Resources */,
 				3886C0A11BD748830014E661 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -517,6 +534,7 @@
 				0C752D9B1C1D5F6D0010EEDF /* NSDateFormatter+Category.m in Sources */,
 				38E45F551C28074A002C49AC /* BaseVC.m in Sources */,
 				384E5C3E1C293FAE00AA3BF9 /* MyVC.m in Sources */,
+				0CA68ABA1C2A2D1500734443 /* MusicControlView.m in Sources */,
 				38E45F581C28076D002C49AC /* MenuVC.m in Sources */,
 				0C75306F1C1D94BF0010EEDF /* NSObject+Network.m in Sources */,
 				0C3B38F11C1DC6500037867E /* UIScrollView+Refresh.m in Sources */,
@@ -642,21 +660,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/BaseProject/Vendor/umeng_ios_social_sdk_4.2-2.5_arm64_custom/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/Resource/PrefixHeader.pch";
 				INFOPLIST_FILE = BaseProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/BaseProject/Vendor/UMAnalytics_Sdk_3.6.4",
-					"$(PROJECT_DIR)/BaseProject/Vendor/umeng_ios_social_sdk_4.2-2.5_arm64_custom/UMSocial_Sdk_4.2.5",
-					"$(PROJECT_DIR)/BaseProject/Vendor/umeng_ios_social_sdk_4.2-2.5_arm64_custom/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
-					"$(PROJECT_DIR)/BaseProject/Vendor/umeng_ios_social_sdk_4.2-2.5_arm64_custom/UMSocial_Sdk_Extra_Frameworks/Wechat",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tedu.Music1;
 				PRODUCT_NAME = BaseProject;
 			};
@@ -669,21 +678,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/BaseProject/Vendor/umeng_ios_social_sdk_4.2-2.5_arm64_custom/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/Resource/PrefixHeader.pch";
 				INFOPLIST_FILE = BaseProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/BaseProject/Vendor/UMAnalytics_Sdk_3.6.4",
-					"$(PROJECT_DIR)/BaseProject/Vendor/umeng_ios_social_sdk_4.2-2.5_arm64_custom/UMSocial_Sdk_4.2.5",
-					"$(PROJECT_DIR)/BaseProject/Vendor/umeng_ios_social_sdk_4.2-2.5_arm64_custom/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
-					"$(PROJECT_DIR)/BaseProject/Vendor/umeng_ios_social_sdk_4.2-2.5_arm64_custom/UMSocial_Sdk_Extra_Frameworks/Wechat",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tedu.Music1;
 				PRODUCT_NAME = BaseProject;
 			};
