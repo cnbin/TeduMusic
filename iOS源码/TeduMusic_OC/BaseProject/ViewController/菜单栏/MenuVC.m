@@ -67,6 +67,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     NSString *identify = kLoginCell;
+    identify = kUnLoginCell;
     if (indexPath.row) {
         identify = kItemCell;
     }

@@ -130,7 +130,34 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lte-1W-gQh" id="RUP-4N-KL2">
                                             <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <color key="backgroundColor" red="0.1529411765" green="0.92941176469999998" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obq-2H-q3H">
+                                                    <rect key="frame" x="30" y="104" width="40" height="36"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <state key="normal" title="登陆">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="我" translatesAutoresizingMaskIntoConstraints="NO" id="l46-Of-IVd">
+                                                    <rect key="frame" x="53" y="38" width="54" height="54"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9PD-y0-SSh">
+                                                    <rect key="frame" x="90" y="104" width="40" height="36"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <state key="normal" title="注册">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="l46-Of-IVd" firstAttribute="centerX" secondItem="RUP-4N-KL2" secondAttribute="centerX" id="1nE-Uy-ati"/>
+                                                <constraint firstItem="obq-2H-q3H" firstAttribute="top" secondItem="l46-Of-IVd" secondAttribute="bottom" constant="12" id="IyU-xr-zXT"/>
+                                                <constraint firstAttribute="bottom" secondItem="obq-2H-q3H" secondAttribute="bottom" constant="20" id="KZw-nN-MwQ"/>
+                                                <constraint firstAttribute="bottom" secondItem="9PD-y0-SSh" secondAttribute="bottom" constant="20" id="ano-Y2-BAb"/>
+                                                <constraint firstItem="9PD-y0-SSh" firstAttribute="centerX" secondItem="RUP-4N-KL2" secondAttribute="centerX" constant="30" id="bbW-xw-Igo"/>
+                                                <constraint firstItem="obq-2H-q3H" firstAttribute="centerX" secondItem="RUP-4N-KL2" secondAttribute="centerX" constant="-30" id="cjG-8u-JHv"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
@@ -672,6 +699,7 @@
         <image name="icon3" width="39" height="39"/>
         <image name="icon4" width="39" height="39"/>
         <image name="头像" width="34" height="34"/>
+        <image name="我" width="54" height="54"/>
         <image name="排行榜" width="45" height="45"/>
         <image name="曲风流派" width="19" height="19"/>
         <image name="本地音乐" width="39" height="28"/>
