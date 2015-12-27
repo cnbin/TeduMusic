@@ -22,5 +22,8 @@
 /** 导航栏背景色 绿 */
 #define kNaviBGGreen16          @"8cd6a3"
 
+/** 友盟AppKey */
+#define kUMAppKey           @"567f6275e0f55a83e40021e7"
+
 
 #endif /* Constants_h */
