@@ -10,4 +10,8 @@
 
 @interface Factory : NSObject
 
+/** 导航栏左上角显示菜单按钮 */
+
++ (void)addShowMenuBarItem:(UIViewController *)vc;
+
 @end

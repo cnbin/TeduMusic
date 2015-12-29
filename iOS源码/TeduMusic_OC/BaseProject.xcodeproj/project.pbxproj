@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		0C2407661C1DCE0A00F5BD71 /* NSObject+ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2407651C1DCE0A00F5BD71 /* NSObject+ViewModel.m */; };
+		0C2B33A21C32E0E900E18C04 /* ThirdLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2B33A11C32E0E900E18C04 /* ThirdLoginView.m */; };
+		0C2B33A41C32E0FE00E18C04 /* ThirdLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C2B33A31C32E0FE00E18C04 /* ThirdLoginView.xib */; };
+		0C2B33A91C32E74000E18C04 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2B33A81C32E74000E18C04 /* LoginVC.m */; };
+		0C2B33AC1C32E75A00E18C04 /* RegisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2B33AB1C32E75A00E18C04 /* RegisterVC.m */; };
+		0C2B33B01C32E85300E18C04 /* UnLoginCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2B33AF1C32E85300E18C04 /* UnLoginCell.m */; };
+		0C2B33B41C32F02D00E18C04 /* RegisterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2B33B31C32F02D00E18C04 /* RegisterCell.m */; };
 		0C3B38F11C1DC6500037867E /* UIScrollView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C3B38F01C1DC6500037867E /* UIScrollView+Refresh.m */; };
 		0C752D871C1D5E9C0010EEDF /* AppDelegate+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C752D7F1C1D5E9C0010EEDF /* AppDelegate+Category.m */; };
 		0C752D891C1D5E9C0010EEDF /* NSObject+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C752D821C1D5E9C0010EEDF /* NSObject+Common.m */; };
@@ -53,6 +59,17 @@
 /* Begin PBXFileReference section */
 		0C2407641C1DCE0A00F5BD71 /* NSObject+ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ViewModel.h"; sourceTree = "<group>"; };
 		0C2407651C1DCE0A00F5BD71 /* NSObject+ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ViewModel.m"; sourceTree = "<group>"; };
+		0C2B33A01C32E0E900E18C04 /* ThirdLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdLoginView.h; sourceTree = "<group>"; };
+		0C2B33A11C32E0E900E18C04 /* ThirdLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdLoginView.m; sourceTree = "<group>"; };
+		0C2B33A31C32E0FE00E18C04 /* ThirdLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdLoginView.xib; sourceTree = "<group>"; };
+		0C2B33A71C32E74000E18C04 /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
+		0C2B33A81C32E74000E18C04 /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		0C2B33AA1C32E75A00E18C04 /* RegisterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterVC.h; sourceTree = "<group>"; };
+		0C2B33AB1C32E75A00E18C04 /* RegisterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterVC.m; sourceTree = "<group>"; };
+		0C2B33AE1C32E85300E18C04 /* UnLoginCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnLoginCell.h; sourceTree = "<group>"; };
+		0C2B33AF1C32E85300E18C04 /* UnLoginCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnLoginCell.m; sourceTree = "<group>"; };
+		0C2B33B21C32F02D00E18C04 /* RegisterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterCell.h; sourceTree = "<group>"; };
+		0C2B33B31C32F02D00E18C04 /* RegisterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterCell.m; sourceTree = "<group>"; };
 		0C3B38EF1C1DC6500037867E /* UIScrollView+Refresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Refresh.h"; sourceTree = "<group>"; };
 		0C3B38F01C1DC6500037867E /* UIScrollView+Refresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Refresh.m"; sourceTree = "<group>"; };
 		0C752D7E1C1D5E9C0010EEDF /* AppDelegate+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Category.h"; sourceTree = "<group>"; };
@@ -148,6 +165,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C2B339F1C32E0C900E18C04 /* 第三方登陆 */ = {
+			isa = PBXGroup;
+			children = (
+				0C2B33A01C32E0E900E18C04 /* ThirdLoginView.h */,
+				0C2B33A11C32E0E900E18C04 /* ThirdLoginView.m */,
+				0C2B33A31C32E0FE00E18C04 /* ThirdLoginView.xib */,
+			);
+			path = "第三方登陆";
+			sourceTree = "<group>";
+		};
+		0C2B33A51C32E72800E18C04 /* 登陆 */ = {
+			isa = PBXGroup;
+			children = (
+				0C2B33A71C32E74000E18C04 /* LoginVC.h */,
+				0C2B33A81C32E74000E18C04 /* LoginVC.m */,
+			);
+			path = "登陆";
+			sourceTree = "<group>";
+		};
+		0C2B33A61C32E72800E18C04 /* 注册 */ = {
+			isa = PBXGroup;
+			children = (
+				0C2B33AA1C32E75A00E18C04 /* RegisterVC.h */,
+				0C2B33AB1C32E75A00E18C04 /* RegisterVC.m */,
+			);
+			path = "注册";
+			sourceTree = "<group>";
+		};
+		0C2B33AD1C32E83E00E18C04 /* 菜单 */ = {
+			isa = PBXGroup;
+			children = (
+				0C2B33AE1C32E85300E18C04 /* UnLoginCell.h */,
+				0C2B33AF1C32E85300E18C04 /* UnLoginCell.m */,
+			);
+			path = "菜单";
+			sourceTree = "<group>";
+		};
+		0C2B33B11C32F01D00E18C04 /* 注册 */ = {
+			isa = PBXGroup;
+			children = (
+				0C2B33B21C32F02D00E18C04 /* RegisterCell.h */,
+				0C2B33B31C32F02D00E18C04 /* RegisterCell.m */,
+			);
+			path = "注册";
+			sourceTree = "<group>";
+		};
 		0C752D7D1C1D5E9C0010EEDF /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -311,6 +374,9 @@
 		3886C0B51BD74A4A0014E661 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0C2B33B11C32F01D00E18C04 /* 注册 */,
+				0C2B33AD1C32E83E00E18C04 /* 菜单 */,
+				0C2B339F1C32E0C900E18C04 /* 第三方登陆 */,
 				0CA68AB71C2A287200734443 /* 播放视图 */,
 				38E6DF8E1C29319B0059277D /* 乐馆 */,
 				3856ABB61C28F9CD00854997 /* 首页头部 */,
@@ -344,6 +410,8 @@
 		38E45F4F1C27FAF3002C49AC /* 菜单栏 */ = {
 			isa = PBXGroup;
 			children = (
+				0C2B33A51C32E72800E18C04 /* 登陆 */,
+				0C2B33A61C32E72800E18C04 /* 注册 */,
 				38E45F561C28076D002C49AC /* MenuVC.h */,
 				38E45F571C28076D002C49AC /* MenuVC.m */,
 			);
@@ -465,6 +533,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C2B33A41C32E0FE00E18C04 /* ThirdLoginView.xib in Resources */,
 				3856ABBB1C28F9CD00854997 /* TopBarView.xib in Resources */,
 				3886C0A31BD748830014E661 /* Assets.xcassets in Resources */,
 				3886C0AE1BD749A00014E661 /* LaunchScreen.xib in Resources */,
@@ -528,6 +597,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C2B33B41C32F02D00E18C04 /* RegisterCell.m in Sources */,
 				3886C0BE1BD74AFE0014E661 /* BaseNetManager.m in Sources */,
 				0C7530721C1DC1FE0010EEDF /* NSObject+Parse.m in Sources */,
 				38E6DF8D1C29088A0059277D /* MusicHouseVC.m in Sources */,
@@ -535,8 +605,10 @@
 				38E45F551C28074A002C49AC /* BaseVC.m in Sources */,
 				384E5C3E1C293FAE00AA3BF9 /* MyVC.m in Sources */,
 				0CA68ABA1C2A2D1500734443 /* MusicControlView.m in Sources */,
+				0C2B33A21C32E0E900E18C04 /* ThirdLoginView.m in Sources */,
 				38E45F581C28076D002C49AC /* MenuVC.m in Sources */,
 				0C75306F1C1D94BF0010EEDF /* NSObject+Network.m in Sources */,
+				0C2B33B01C32E85300E18C04 /* UnLoginCell.m in Sources */,
 				0C3B38F11C1DC6500037867E /* UIScrollView+Refresh.m in Sources */,
 				38E6DF911C2931AF0059277D /* MusicHouseCell.m in Sources */,
 				3886C09B1BD748830014E661 /* AppDelegate.m in Sources */,
@@ -553,6 +625,8 @@
 				3886C0C11BD74B090014E661 /* BaseModel.m in Sources */,
 				0C752D8A1C1D5E9C0010EEDF /* NSString+PJR.m in Sources */,
 				3886C0981BD748830014E661 /* main.m in Sources */,
+				0C2B33A91C32E74000E18C04 /* LoginVC.m in Sources */,
+				0C2B33AC1C32E75A00E18C04 /* RegisterVC.m in Sources */,
 				38E45F5B1C2807A6002C49AC /* TabBarVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,4 +10,13 @@
 
 @implementation Factory
 
+
++ (void)addShowMenuBarItem:(UIViewController *)vc{
+    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] bk_initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks handler:^(id sender) {
+        [vc.sideMenuViewController presentLeftMenuViewController];
+    }];
+    
+    vc.navigationItem.leftBarButtonItem = backItem;
+}
+
 @end

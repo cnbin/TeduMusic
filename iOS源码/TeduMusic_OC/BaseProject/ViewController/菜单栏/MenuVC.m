@@ -7,12 +7,13 @@
 //
 
 #import "MenuVC.h"
+#import "UnLoginCell.h"
 
 #define kLoginCell      @"Cell0"
 #define kUnLoginCell    @"Cell2"
 #define kItemCell       @"Cell1"
 
-@interface MenuVC ()<UITableViewDelegate,UITableViewDataSource>
+@interface MenuVC ()<UITableViewDelegate,UITableViewDataSource, UnLoginCellDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 /** 表格内容 */
@@ -76,27 +77,42 @@
         UILabel *lb = (UILabel *)[cell.contentView viewWithTag:100];
         lb.text = self.items[indexPath.row - 1];
     }else{
-        
+        UnLoginCell *ce = (UnLoginCell *)cell;
+        ce.delegate = self;
     }
     
     return cell;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)unLoginCell:(UnLoginCell *)cell clickBtn:(ButtonType)type{
+    switch (type) {
+        case ButtonTypeLogin: {
+            [self.sideMenuViewController setContentViewController:kVCFromSb(@"LoginNavi", @"Main")];
+            break;
+        }
+        case ButtonTypeRegister: {
+            [self.sideMenuViewController setContentViewController:kVCFromSb(@"RegisterNavi", @"Main")];
+            break;
+        }
+    }
+    [self.sideMenuViewController hideMenuViewController];
 }
-*/
+
+/*
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 - (NSArray *)items {
-	if(_items == nil) {
-		_items = [[NSArray alloc] initWithObjects:@"会员中心", @"流量月包", @"音效", @"听歌识曲", @"意见反馈", @"设置", nil];
-	}
-	return _items;
+    if(_items == nil) {
+        _items = [[NSArray alloc] initWithObjects:@"会员中心", @"流量月包", @"音效", @"听歌识曲", @"意见反馈", @"设置", nil];
+    }
+    return _items;
 }
 
 @end

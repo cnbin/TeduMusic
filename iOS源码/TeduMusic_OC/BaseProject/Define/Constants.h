@@ -26,4 +26,7 @@
 #define kUMAppKey           @"567f6275e0f55a83e40021e7"
 
 
+/** 第三方登陆视图高度 */
+#define kThirdViewHeight        150
+
 #endif /* Constants_h */
